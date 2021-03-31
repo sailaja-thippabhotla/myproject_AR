@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" allowusermedia=""
+    content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+
+  <title>RoyalEnfield</title>
+  <style>
+    @font-face {
+      font-family: Avenir-Book;
+      src: url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Book.eot),
+        url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Book.svg),
+        url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Book.ttf),
+        url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Book.woff),
+        url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Book.woff2)
+    }
+
+    @font-face {
+      font-family: Avenir-Black;
+      src: url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Black.eot),
+        url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Black.svg),
+        url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Black.ttf),
+        url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Black.woff),
+        url(https://webardata.s3.ap-south-1.amazonaws.com/RE/fonts/Avenir-Black.woff2)
+    }
+
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      font-family: Avenir-Book;
+    }
+
+
+    /* .superNovaButton {
+  display: block;
+  width:33.33%;
+} */
+
+    .cmnElm:hover {
+      background-color: black;
+      -webkit-transition: background-color 600ms linear;
+      -ms-transition: background-color 600ms linear;
+      transition: background-color 600ms linear;
+
+    }
+
+
+    .cmnElm:hover img {
+      transform: scale(1.2);
+    }
+
+    .cmnElm:hover p {
+      color: #c7bfbf;
+    }
+
+    /* .superNovaButton:hover{
+	background-color: black;
+} */
+    /* .fireballButton {
+  display: block;
+  width:33.33%;
+} */
+    /* .fireballButton:hover{
+	background-color: black;
+} */
+    /* .stallarButton {
+  display: block;
+  width:33.33%;
+} */
+    /* .stallarButton:hover{
+	background-color: black;
+} */
+
+    .parent_heading {
+      position: relative;
+      display: flex;
+      height: 10%;
+      width: 100%;
+      /* border-bottom:1.5px solid #ccb8b8; */
+    }
+
+    #logo {
+      position: relative;
+      width: 33.33%;
+    }
+
+
+    #logo>img {
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #middle_text {
+      text-align: center;
+      position: relative;
+      width: 33.33%;
+      cursor: pointer;
+    }
+
+    .bike_center{
+      width:70%;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    #middle_text .arrorBtn {
+      font-size: 15px;
+      width: 15%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+
+    .arrorBtn>img {
+      width: 35px;
+    }
+
+
+    #middle_text p {
+      margin: 0 auto;
+      text-transform: uppercase;
+      color: #000000;
+      letter-spacing: 2px;
+      font-size: 17px;
+    }
+
+    #middle_text .bikename {
+      width: 85%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+
+
+    #middle_text>img {
+      width: 31px;
+    }
+
+
+    #middle_text span {
+      font-family: Avenir-Black;
+      font-weight: 900;
+      color: #000000;
+    }
+
+    #middle_text {
+      background-color: #ffffff;
+      /* color: #ffffff; */
+      display: flex;
+      border-left: 1px solid #E0E0DD;
+      border-right: 1px solid #E0E0DD;
+    }
+
+    .adjust_heading {
+      width: 33.33%;
+    }
+
+    #right_text {
+      text-align: center;
+      position: relative;
+      display: flex;
+      /* justify-content: center;
+      align-self: center; */
+      cursor: pointer;
+    }
+
+    #right_text>p {
+      margin: 0 auto;
+      text-transform: uppercase;
+      color: #504b4b;
+      font-weight: 500;
+      letter-spacing: 4px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
+
+    .modelName_heading {
+      position: relative;
+      display: flex;
+      height: 90%;
+      width: 100%;
+    }
+
+    .adjustmodelName_heading {
+      border-bottom: 1px solid #E0E0DD;
+      border-top: 1px solid #E0E0DD;
+      border-left: 1px solid #E0E0DD;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      height: 10%;
+      /* display: flex;
+    justify-content: center;
+    align-self: center; */
+
+    }
+
+    .adjustmodelName_heading span {
+      font-family: Avenir-Black;
+    }
+
+    .adjustmodelName_heading>p {
+      letter-spacing: 2px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .cmnElm {
+      height: 100%;
+      width: 33.33%;
+      display: block;
+    }
+
+    .cmnElm p {
+      margin: 0 auto;
+      text-transform: uppercase;
+      color: #504b4b;
+      font-weight: 500;
+    }
+
+    /* #modelName2_text {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+  } */
+
+    .cmnElm img {
+      transition: transform .2s;
+      /* Animation */
+      width: 90%;
+    }
+
+    .cmnElm>a {
+      text-decoration: none;
+    }
+
+    .fitImg {
+      width: 100%;
+      height: 82%;
+      margin: 0 auto;
+      /* border:1px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mobileChk {
+      display: none;
+      border: unset;
+    }
+
+    #virtual_link {
+      top: 12px;
+      right: 12px;
+      width: 50px;
+      z-index: 999;
+      position: absolute;
+      background-color: #ffffff;
+    }
+
+    #virtual_link .p1 {
+      font-size: 11px;
+      text-align: center;
+      margin: 2px;
+    }
+
+    #virtual_link .p2 {
+      font-family: Avenir-Black;
+      font-size: 15px;
+      text-align: center;
+      color: #504b4b;
+      margin: 2px;
+    }
+
+    .virtual_icon>img {
+      margin: 0 auto;
+      width: 100%;
+      display: block;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .cmnElm {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-top: 0px;
+      }
+
+      #right_text>p {
+        padding: 10px;
+      }
+
+      #middle_text p{
+        font-size: 11px;
+      }
+
+      .cmnElm img {
+        width: 80%;
+      }
+
+      .parent_heading {
+        display: block;
+        height: unset;
+      }
+
+      #logo {
+        width: 100%;
+      }
+
+      #logo>img {
+        width: 35%;
+      }
+
+      #middle_text {
+        display: flex;
+        width: 100%;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 1.5px solid #E0E0DD;
+        border-bottom: 1.5px solid #E0E0DD;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+
+      #right_text {
+        /* display: none; */
+        width:100%;
+        border-bottom: 1.5px solid #E0E0DD;
+      }
+
+      #middle_text .bikename {
+        width: 85%;
+      }
+
+      #middle_text .arrorBtn {
+        width: 15%;
+      }
+
+      .modelName_heading {
+        position: relative;
+        display: block;
+        height: unset;
+      }
+
+      .adjustmodelName_heading {
+        display: none;
+      }
+
+      .mobileChk {
+        display: block;
+      }
+
+      .cmnElm p {
+        padding-top: 10px;
+        text-align: left;
+        /* padding-left: 30px; */
+      }
+
+      #virtual_link {
+        top: -11px;
+      }
+    }
+
+    #container {
+      /* border:1px solid green; */
+      height: 100%;
+    }
+
+
+
+    @media only screen and (min-width: 601px) and (max-width: 900px) and (orientation:landscape){
+      .bike_center {
+        width: 80%;
+      }
+      #middle_text p{
+        font-size: 9px;
+        letter-spacing: 1px;
+      }
+      .cmnElm p{
+        font-size: 10px;
+      }
+      .cmnElm img {
+        width: 100%;
+      }
+      #right_text>p{
+        font-size: 10px;
+      }
+      /* #middle_text p{
+        font-size: 10px;
+      } */
+    }
+
+
+
+
+  </style>
+</head>
+
+<body id="bodyElm">
+  <div id="container">
+    <div class="parent_heading">
+      <div id="logo"><img src="https://webardata.s3.ap-south-1.amazonaws.com/RE/icons/re_logo.png">
+      </div>
+      <div id="middle_text" class="adjust_heading">
+        <div class="bike_center">
+        <div class="bikename">
+          <p><span>CHOOSE YOUR MODEL</span></p>
+        </div>
+        <div class="arrorBtn">
+          <!-- <img src="https://webardata.s3.ap-south-1.amazonaws.com/RE/buttons/arrow_btn1.png" /> -->
+          <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+        </div>
+        </div>
+      </div>
+      <div id="right_text" class="adjust_heading">
+        <p>Book a test ride</p>
+      </div>
+    </div>
+
+    <div class="modelName_heading">
+      <!-- <div id="virtual_link">
+        <div class="virtual_icon"><img src="https://webardata.s3.ap-south-1.amazonaws.com/RE/buttons/vitrual_ar.png" />
+        </div>
+        <div class="virtual_txt">
+          <p class="p1">View in</p>
+          <p class="p2">AR</p>
+        </div>
+      </div> -->
+      <div class="superNovaButton cmnElm" id="superNovaButton">
+        <a href="./re.html?id=dcd7a8b7ac774fe58724902bae7a099b&&clr=brown">
+          <div id="modelName1_text" class="adjustmodelName_heading">
+            <p><span>meteor 350</span> supernova</p>
+          </div>
+          <div class="fitImg">
+            <img
+              src="https://webardata.s3.ap-south-1.amazonaws.com/RE/buttons/BikeButtons/meteor350_supernova_btn_unselected.png" />
+          </div>
+          <div id="modelName1_text" class="adjustmodelName_heading mobileChk">
+            <p><span>meteor 350</span> supernova</p>
+          </div>
+        </a>
+      </div>
+      <div class="fireballButton cmnElm" id="fireballButton">
+        <a href="./re.html?id=1c8d5458dd48422984d77dd6024c5f77&&clr=red">
+          <div id="modelName2_text" class="adjustmodelName_heading">
+            <p><span>meteor 350</span> fireball</p>
+          </div>
+          <div class="fitImg">
+            <img
+              src="https://webardata.s3.ap-south-1.amazonaws.com/RE/buttons/BikeButtons/meteor350_fireball_btn_unselected.png" />
+
+          </div>
+          <div id="modelName2_text" class="adjustmodelName_heading mobileChk">
+            <p><span>meteor 350</span> fireball</p>
+          </div>
+        </a>
+      </div>
+      <div class="stallarButton cmnElm" id="stallarButton">
+        <a href="./re.html?id=787c7f9c1dd14cefb033a589902608df&&clr=blue">
+          <div id="modelName3_text" class="adjustmodelName_heading">
+            <p><span>meteor 350</span> stellar</p>
+          </div>
+          <div class="fitImg">
+            <img
+              src="https://webardata.s3.ap-south-1.amazonaws.com/RE/buttons/BikeButtons/meteor350_stellar_btn_unselected.png" />
+
+          </div>
+          <div id="modelName3_text" class="adjustmodelName_heading mobileChk">
+            <p><span>meteor 350</span> stellar</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+  document.getElementById('right_text').addEventListener('click', function () {
+    console.log("on click go to the 'book to test ride'");
+    window.open('https://www.royalenfield.com/in/en/motorcycles/meteor-350/meteor-campaign/#full-width-mobile', '_blank');
+  });
+
+
+
+</script>
+
+</html>

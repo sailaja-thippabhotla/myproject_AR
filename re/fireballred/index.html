@@ -1,0 +1,351 @@
+  <html>
+    <head>
+      <!-- e3fc863e8bdfcb75e66d74f180c8a41ba6498ce5 27c7109c3f1badc44e8658e781a14545 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" allowusermedia
+  content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+      <title>Royal Enfield Fireball Red (1)</title>
+       <script src="//cdn.8thwall.com/web/aframe/8frame-0.9.0.min.js"></script>
+
+  <!-- https://github.com/nikolaiwarner/aframe-chromakey-material/blob/master/README.md -->
+  <script src="//cdn.8thwall.com/web/aframe/aframe-extras-6.1.0.min.js"></script>
+  <script src="//cdn.8thwall.com/web/iframe/iframe-inner.js"></script>
+  <script src="https://morandd.github.io/aframe-multitouch-look-controls/multitouch-look-controls.js"></script>
+
+  <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.7.1.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- XR Extras - provides utilities like load screen, almost there, and error handling.
+   See github.com/8thwall/web/xrextras -->
+   <script crossorigin="anonymous" src="//webardata.s3.ap-south-1.amazonaws.com/JS/xrextras.js"></script>
+      <script async crossorigin="use-credentials" src="//apps.8thwall.com/xrweb?appKey=r9tnaPySD6iOxM8hjnwUiTpPYHIoXpowJtunOAvTjpZMCPp1xeOilq6MKuKoFGZvjleBsf"></script>
+      
+      
+
+  <script src="./main.js"></script>
+ 
+  <link rel="stylesheet" href="./index.css">
+<!-- **************************************** Analytics Code ************************************-->
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-186053293-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-186053293-1');
+</script>
+<script type="text/javascript">
+
+  let urlParams = new URLSearchParams(window.location.search);
+  let utm_source = urlParams.get('utm_source')
+  let utm_medium = urlParams.get('utm_medium')
+  let utm_campaign = urlParams.get('utm_campaign')
+  if(urlParams === null){
+    urlParams = "NA"
+  }
+  if(utm_medium === null){
+    utm_medium = "NA"
+  }
+  if(utm_campaign === null){
+    utm_campaign = "NA"
+  }
+
+  function getOS() {
+    var userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        os = null;
+
+    if (macosPlatforms.indexOf(platform) !== -1) {
+      os = 'Mac OS';
+    } else if (iosPlatforms.indexOf(platform) !== -1) {
+      os = 'iOS';
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      os = 'Windows';
+    } else if (/Android/.test(userAgent)) {
+      os = 'Android';
+    } else if (!os && /Linux/.test(platform)) {
+      os = 'Linux';
+    }
+
+    return os;
+  }
+  var os = getOS();
+  // var mainScript = document.createElement("script")
+  //     mainScript.type = "text/javascript"
+  // console.log(os)
+  // if(os === 'Android'){
+  //   console.log('android')
+  //   mainScript.src = "main_Android.js"
+  // }else{
+  //   console.log('ios')
+  //   mainScript.src = "main.js"
+  // }
+  //document.head.appendChild(mainScript)
+  gtag( 'event', utm_source, {
+        'event_category': utm_medium,
+        'event_label': utm_campaign,
+  });
+  gtag( 'event', os, {
+        'event_category': utm_source,
+        'event_label': utm_medium+"_"+utm_campaign,
+  });
+
+</script>
+<!-- **************************************** Analytics End ************************************-->
+  
+</head>
+
+<body>
+<!-- Copyright (c) 2020 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+  <div id="tapT" style="z-index: 2">
+   <h2> Tap to place </h2>
+  </div>
+
+  
+ <!--Enable Icon-->
+ <!--<div id="colorBtn" style ="z-index: 2">-->
+  <div id="colorIcon" style="z-index: 12; display: none">
+    <img  src="./assets/icons/color-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="colorIcon1" style="z-index: 12; display: none">
+    <!--<img  src="./assets/icons/choose_color.png" height = "auto" width = "100%"/>-->
+  </div>
+  <div id="colorIcon2" style="z-index: 12; display: none">
+    <img  src="./assets/icons/red_unselected.png" height = "auto" width = "100%"/>
+  </div>
+  <div id="colorIcon3" style="z-index: 12; display: none">
+    <img  src="./assets/icons/yellow_unselected.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="dnaIcon" style="z-index: 12; display: none">
+    <img  src="./assets/icons/redna-04.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="accessIcon" style="z-index: 12; display: none">
+    <img  src="./assets/icons/accessability-04.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="engineIcon" style="z-index: 12; display: none">
+    <img  src="./assets/icons/engine-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="displayIcon" style="z-index: 12; display: none">
+    <img src="./assets/icons/display-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="headlampIcon" style="z-index: 12; display: none">
+    <img  src="./assets/icons/headlamp-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="brakeIcon" style="z-index: 12; display: none">
+    <img  src="./assets/icons/brake-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="wheelIcon" style="z-index: 12; display: none">
+    <img  src="./assets/icons/wheels-04.png" height = "auto" width = "100%"/>
+  </div>
+
+   <!--Disable Icon-->
+  <div id="colorIconI" style="z-index: 12; display: none">
+    <img  src="./assets/icons/colorI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="colorIconI1" style="z-index: 12; display: none">
+    <img  src="./assets/icons/choose_color.png" height = "auto" width = "100%"/>
+  </div>
+  <div id="colorIconI2" style="z-index: 12; display: none">
+    <img  src="./assets/icons/red_selected.png" height = "auto" width = "100%"/>
+  </div>
+  <div id="colorIconI3" style="z-index: 12; display: none">
+    <img  src="./assets/icons/yellow_selected.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="dnaIconI" style="z-index: 12; display: none">
+    <img  src="./assets/icons/rednaI-04.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="accessIconI" style="z-index: 12; display: none">
+    <img  src="./assets/icons/accessabilityI-04.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="engineIconI" style="z-index: 12; display: none">
+    <img  src="./assets/icons/engineI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="displayIconI" style="z-index: 12; display: none">
+    <img src="./assets/icons/displayI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="headlampIconI" style="z-index: 12; display: none">
+    <img  src="./assets/icons/headlampI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="brakeIconI" style="z-index: 12; display: none">
+    <img  src="./assets/icons/brakeI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="wheelIconI" style="z-index: 12; display: none">
+    <img  src="./assets/icons/wheelsI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <!--<div id="bike1" style="z-index: 12; display: none">-->
+  <!--  <img  src="./assets/icons/super_nova_selected.png" height = "auto" width = "100%"/>-->
+  <!--</div>-->
+
+  <!--<div id="bike2" style="z-index: 12; display: none">-->
+  <!--  <img  src="./assets/icons/fireball_selected.png" height = "auto" width = "100%"/>-->
+  <!--</div>-->
+
+  <!--<div id="bike3" style="z-index: 12; display: none">-->
+  <!--  <img  src="./assets/icons/stellar_selected.png" height = "auto" width = "100%"/>-->
+  <!--</div>-->
+
+  <div id="testride" style="z-index: 12; display: none">
+    <img  src="./assets/icons/testride.png" height = "auto" width = "100%"/>
+  </div>
+
+    <div id="motorcycle" style="z-index: 12; display: none">
+    <img  src="./assets/icons/motorbike.png" height = "auto" width = "100%"/>
+  </div>
+
+    <div id="arrow" style="z-index: 12; display: none">
+    <img  src="./assets/icons/backarrow.png" height = "auto" width = "100%"/>
+  </div>
+
+  <!--</div>-->
+<a-scene
+  rec
+  tap-place
+  xrextras-gesture-detector
+  xrextras-almost-there
+  xrextras-loading
+  xrextras-runtime-error
+  renderer="colorManagement:true"
+  xrweb>
+
+  <!-- We can define assets here to be loaded when A-Frame initializes -->
+  <a-assets>
+     <!--<a-asset-item id="rebrown" src="./assets/Re_blue_steller.glb"></a-asset-item>-->
+     <a-asset-item id="reyellow" src="./assets/RE_Fireball_Bike_yellow.glb"></a-asset-item>
+     <a-asset-item id="rered" src="https://webardata.s3.ap-south-1.amazonaws.com/RE/RE2021/re_bike_meteor_-_fireball_red_animation_002/scene.gltf"></a-asset-item>
+
+
+    <img id="dnaImg" src="./assets/callouts/redna.png">
+    <img id="accessImg" src="./assets/callouts/access.png">
+    <img id="engineImg" src="./assets/callouts/engine.png">
+    <img id="displayImg" src="./assets/callouts/display.png">
+    <img id="headlampImg" src="./assets/callouts/headlamp.png">
+    <img id="brakeImg" src="./assets/callouts/brake.png">
+    <img id="wheelImg" src="./assets/callouts/wheels.png">
+    <img id="displayImg2" src="https://webardata.s3.ap-south-1.amazonaws.com/RE/meter_2_Animation_sequence/Royal_enfield_navigation_instrument_cluster_00.png">
+    <img id="displayImg1" src="https://webardata.s3.ap-south-1.amazonaws.com/RE/meter_1_Animation_sequence/Royalenfield_display_meter_animation_00.png">
+    
+  </a-assets>
+
+  <a-assets>
+    <img id="posx" src="./assets/cubemap/posx.png">
+    <img id="posy" src="./assets/cubemap/posy.png">
+    <img id="posz" src="./assets/cubemap/posz.png">
+    <img id="negx" src="./assets/cubemap/negx.png">
+    <img id="negy" src="./assets/cubemap/negy.png">
+    <img id="negz" src="./assets/cubemap/negz.png">
+  </a-assets>
+
+  <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
+  <a-camera
+    id="camera"
+    position="0 8 8"
+    raycaster="objects: .cantap"
+    cursor="
+      fuse: false;
+      rayOrigin: mouse;">
+  </a-camera>
+
+  <a-entity
+      light="type: directional;
+         intensity: 0.8;
+         castShadow: true;
+         shadowMapHeight:2048;
+         shadowMapWidth:2048;
+         shadowCameraTop: 10;
+         target: #model;"
+      position="1 4.3 2.5"
+      xrextras-attach="target: model; offset: 1 15 3;"
+      shadow>
+  </a-entity>
+
+  <a-light type="ambient" intensity="1.0"></a-light>
+
+
+  <a-entity
+    id="remodel"
+    gltf-model="#rered"
+  class="cantap"
+    cubemap-static
+    scale="0.0075 0.0075 0.0075"
+    position="0 0 -7"
+    animation-mixer="clip: idle; loop: repeat"
+    visible=false
+    shadow>
+  </a-entity>
+
+  
+
+  <a-entity id="rednaC">
+    <a-plane src="#dnaImg" scale="2 2 2"  xrextras-attach="target: remodel; offset: 0 10 10;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+   <a-entity id="accessC">
+    <a-plane src="#accessImg" scale="10 10 10"  xrextras-attach="target: remodel; offset: 30 40 -80;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+   <a-entity id="engineC" style="z-index: 12; display: none">
+    <a-plane src="#engineImg" scale="10 10 10"  xrextras-attach="target: remodel; offset: 30 40 -140;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+  <a-entity id="displayC">
+    <a-plane src="#displayImg" scale="10 10 10"  xrextras-attach="target: remodel; offset: 30 70 -160;"  material="transparent: true;"></a-plane>
+    <a-plane id="displayImg1Plane" src="#displayImg1" scale="10 10 10"  xrextras-attach="target: remodel; offset: -5 15 -160;"  material="transparent: true;" ></a-plane>
+    <a-plane id="displayImg2Plane" src="#displayImg2" scale="10 10 10"  xrextras-attach="target: remodel; offset: 5 15 -160;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+  <a-entity id="headlampC">
+    <a-plane src="#headlampImg" scale="5 5 5"  xrextras-attach="target: remodel; offset: -20 10 10;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+  <a-entity id="brakeC">
+    <a-plane src="#brakeImg" scale="5 5 5"  xrextras-attach="target: remodel; offset: -20 10 10;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+  <a-entity id="wheelC">
+    <a-plane src="#wheelImg" scale="5 5 5"  xrextras-attach="target: remodel; offset: -20 10 10;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+  
+<a-box
+    id="ground"
+    class="cantap"
+    scale="1000 2 1000"
+    position="0 -1 0"
+    material="shader: shadow; transparent: true; opacity: 0.4"
+    shadow>
+  </a-box>
+
+  </a-scene>
+
+
+</body>
+</html>

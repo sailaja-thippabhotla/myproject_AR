@@ -1,0 +1,235 @@
+<!-- Copyright (c) 2020 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+  <div id="tapT" style="z-index: 2">
+   <h2> Tap to place </h2>
+  </div>
+
+  
+ <!--Enable Icon-->
+ <!--<div id="colorBtn" style ="z-index: 2">-->
+  <div id="colorIcon" style="z-index: 2">
+    <img  src="./assets/icons/color-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="colorIcon1" style="z-index: 2">
+    <!--<img  src="./assets/icons/choose_color.png" height = "auto" width = "100%"/>-->
+  </div>
+  <div id="colorIcon2" style="z-index: 2">
+    <img  src="./assets/icons/BlueStellerColor_UnSelected.png" height = "auto" width = "100%"/>
+  </div>
+  <div id="colorIcon3" style="z-index: 2">
+    <img  src="./assets/icons/BlackStellerColor_UnSelected.png" height = "auto" width = "100%"/>
+  </div>
+  <div id="colorIcon4" style="z-index: 2">
+    <img  src="./assets/icons/RedStellerColor_UnSelected.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="dnaIcon" style="z-index: 2">
+    <img  src="./assets/icons/redna-04.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="accessIcon" style="z-index: 2">
+    <img  src="./assets/icons/accessability-04.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="engineIcon" style="z-index: 2">
+    <img  src="./assets/icons/engine-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="displayIcon" style="z-index: 2">
+    <img src="./assets/icons/display-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="headlampIcon" style="z-index: 2">
+    <img  src="./assets/icons/headlamp-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="brakeIcon" style="z-index: 2">
+    <img  src="./assets/icons/brake-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="wheelIcon" style="z-index: 2">
+    <img  src="./assets/icons/wheels-04.png" height = "auto" width = "100%"/>
+  </div>
+
+   <!--Disable Icon-->
+  <div id="colorIconI" style="z-index: 2">
+    <img  src="./assets/icons/colorI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="colorIconI1" style="z-index: 2">
+    <img  src="./assets/icons/choose_color.png" height = "auto" width = "100%"/>
+  </div>
+  <div id="colorIconI2" style="z-index: 2">
+    <img  src="./assets/icons/BlueStellerColor_Selected.png" height = "auto" width = "100%"/>
+  </div>
+  <div id="colorIconI3" style="z-index: 2">
+    <img  src="./assets/icons/BlackStellerColor_Selected.png" height = "auto" width = "100%"/>
+  </div>
+  <div id="colorIconI4" style="z-index: 2">
+    <img  src="./assets/icons/RedStellerColor_Selected.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="dnaIconI" style="z-index: 2">
+    <img  src="./assets/icons/rednaI-04.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="accessIconI" style="z-index: 2">
+    <img  src="./assets/icons/accessabilityI-04.png" height = "auto" width = "100%"/>
+  </div>
+  
+  <div id="engineIconI" style="z-index: 2">
+    <img  src="./assets/icons/engineI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="displayIconI" style="z-index: 2">
+    <img src="./assets/icons/displayI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="headlampIconI" style="z-index: 2">
+    <img  src="./assets/icons/headlampI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="brakeIconI" style="z-index: 2">
+    <img  src="./assets/icons/brakeI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <div id="wheelIconI" style="z-index: 2">
+    <img  src="./assets/icons/wheelsI-04.png" height = "auto" width = "100%"/>
+  </div>
+
+  <!--<div id="bike1" style="z-index: 2">-->
+  <!--  <img  src="./assets/icons/super_nova_selected.png" height = "auto" width = "100%"/>-->
+  <!--</div>-->
+
+  <!--<div id="bike2" style="z-index: 2">-->
+  <!--  <img  src="./assets/icons/fireball_selected.png" height = "auto" width = "100%"/>-->
+  <!--</div>-->
+
+  <!--<div id="bike3" style="z-index: 2">-->
+  <!--  <img  src="./assets/icons/stellar_selected.png" height = "auto" width = "100%"/>-->
+  <!--</div>-->
+  
+
+  <!--</div>-->
+<a-scene
+  rec
+  tap-place
+  xrextras-gesture-detector
+  xrextras-almost-there
+  xrextras-loading
+  xrextras-runtime-error
+  renderer="colorManagement:true"
+  xrweb>
+
+  <!-- We can define assets here to be loaded when A-Frame initializes -->
+  <a-assets>
+     <a-asset-item id="reblack" src="./assets/RE_Stellar_Bike_black.glb"></a-asset-item>
+     <a-asset-item id="rered" src="./assets/RE_Stellar_Bike_maroon.glb"></a-asset-item>
+     <a-asset-item id="reblue" src="./assets/RE_Stellar_Blue.glb"></a-asset-item>
+
+
+    <img id="dnaImg" src="./assets/callouts/redna.png">
+    <img id="accessImg" src="./assets/callouts/access.png">
+    <img id="engineImg" src="./assets/callouts/engine.png">
+    <img id="displayImg" src="./assets/callouts/display.png">
+    <img id="headlampImg" src="./assets/callouts/headlamp.png">
+    <img id="brakeImg" src="./assets/callouts/brake.png">
+    <img id="wheelImg" src="./assets/callouts/wheels.png">
+    <img id="displayImg2" src="https://webardata.s3.ap-south-1.amazonaws.com/RE/meter_2_Animation_sequence/Royal_enfield_navigation_instrument_cluster_00.png">
+    <img id="displayImg1" src="https://webardata.s3.ap-south-1.amazonaws.com/RE/meter_1_Animation_sequence/Royalenfield_display_meter_animation_00.png">
+    
+  </a-assets>
+
+  <a-assets>
+    <img id="posx" src="./assets/cubemap/posx.jpg">
+    <img id="posy" src="./assets/cubemap/posy.jpg">
+    <img id="posz" src="./assets/cubemap/posz.jpg">
+    <img id="negx" src="./assets/cubemap/negx.jpg">
+    <img id="negy" src="./assets/cubemap/negy.jpg">
+    <img id="negz" src="./assets/cubemap/negz.jpg">
+  </a-assets>
+
+  <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
+  <a-camera
+    id="camera"
+    position="0 8 8"
+    raycaster="objects: .cantap"
+    cursor="
+      fuse: false;
+      rayOrigin: mouse;">
+  </a-camera>
+
+  <a-entity
+      light="type: directional;
+         intensity: 0.8;
+         castShadow: true;
+         shadowMapHeight:2048;
+         shadowMapWidth:2048;
+         shadowCameraTop: 10;
+         target: #model;"
+      position="1 4.3 2.5"
+      xrextras-attach="target: model; offset: 1 15 3;"
+      shadow>
+  </a-entity>
+
+  <a-light type="ambient" intensity="1.0"></a-light>
+
+
+  <a-entity
+    id="remodel"
+    gltf-model="#reblue"
+    class="cantap"
+    cubemap-static
+    scale="0.025 0.025 0.025"
+    position="0 0 -200"
+    animation-mixer="clip: idle; loop: repeat"
+    visible=false
+    shadow>
+  </a-entity>
+
+  
+
+  <a-entity id="rednaC">
+    <a-plane src="#dnaImg" scale="20 20 20"  xrextras-attach="target: remodel; offset: -20 10 10;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+   <a-entity id="accessC">
+    <a-plane src="#accessImg" scale="80 80 80"  xrextras-attach="target: remodel; offset: 30 40 -160;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+   <a-entity id="engineC" style="z-index: 2">
+    <a-plane src="#engineImg" scale="80 80 80"  xrextras-attach="target: remodel; offset: 30 40 -140;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+  <a-entity id="displayC">
+    <a-plane src="#displayImg" scale="80 80 80"  xrextras-attach="target: remodel; offset: 30 70 -160;"  material="transparent: true;"></a-plane>
+    <a-plane id="displayImg1Plane" src="#displayImg1" scale="10 10 10"  xrextras-attach="target: remodel; offset: -5 15 -160;"  material="transparent: true;" ></a-plane>
+    <a-plane id="displayImg2Plane" src="#displayImg2" scale="10 10 10"  xrextras-attach="target: remodel; offset: 5 15 -160;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+  <a-entity id="headlampC">
+    <a-plane src="#headlampImg" scale="18 18 18"  xrextras-attach="target: remodel; offset: -20 10 10;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+  <a-entity id="brakeC">
+    <a-plane src="#brakeImg" scale="18 18 18"  xrextras-attach="target: remodel; offset: -20 10 10;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+  <a-entity id="wheelC">
+    <a-plane src="#wheelImg" scale="18 18 18"  xrextras-attach="target: remodel; offset: -20 10 10;"  material="transparent: true;"></a-plane>
+  </a-entity>
+
+
+  
+<a-box
+    id="ground"
+    class="cantap"
+    scale="1000 2 1000"
+    position="0 -1 0"
+    material="shader: shadow; transparent: true; opacity: 0.4"
+    shadow>
+  </a-box>
+
+  </a-scene>

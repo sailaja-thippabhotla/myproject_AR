@@ -1,0 +1,250 @@
+#colorIcon {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  left: 8%;
+  bottom: 15%;
+}
+#dnaIcon {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  left: 30%;
+  bottom: 15%;
+}
+#accessIcon {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  left: 8%;
+  bottom: 4%;
+}
+#engineIcon {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  left: 30%;
+  bottom: 4%;
+}
+#displayIcon {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  right: 30%;
+  bottom: 4%;
+}
+#headlampIcon {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  right: 8%;
+  bottom: 4%;
+}
+
+#colorIcon1 {
+  display  : block;
+  width    : 41%;
+  height   : auto;
+  position : absolute;
+  right: 1%;
+  bottom: 47.27%;
+}
+#colorIcon2,#colorIconI2 {
+  display  : block;
+  width    : 15%;
+  height   : auto;
+  position : absolute;
+  right: 52%;
+  bottom: 28%;
+}
+#colorIcon3,#colorIconI3 {
+  display  : block;
+  width    : 15%;
+  height   : auto;
+  position : absolute;
+  left: 52%;
+  bottom: 28%;
+}
+
+#brakeIcon {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  right: 8%;
+  bottom: 15%;
+}
+
+#wheelIcon {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  right: 30%;
+  bottom: 15%;
+}
+
+#testride {
+  display  : block;
+  width    : 35%;
+  height   : auto;
+  position : absolute;
+  right: 6%;
+  top: 10%;
+}
+
+#motorcycle {
+  display  : block;
+  width    : 35%;
+  height   : auto;
+  position : absolute;
+  right: 6%;
+  top: 15%;
+}
+
+
+#arrow {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  left: 6%;
+  top: 9%;
+}
+
+#tapT {
+  width       : 70%;
+  height      : auto;
+  display     : block;
+  position    : absolute;
+  left        : 35%;
+  top         : 2%;
+}
+
+#tapT h2{
+  color: white;
+}
+
+#colorIconI {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  left: 8%;
+  bottom: 15%;
+}
+/*#colorIconI1 {*/
+/*  display  : block;*/
+/*  width    : 41%;*/
+/*  height   : auto;*/
+/*  position : absolute;*/
+/*  right: 1%;*/
+/*  bottom: 47.5%;*/
+/*}*/
+/*#colorIconI2 {*/
+/*  display  : block;*/
+/*  width    : 41%;*/
+/*  height   : auto;*/
+/*  position : absolute;*/
+/*  right: 1%;*/
+/*  bottom: 41%;*/
+/*}*/
+/*#colorIconI3 {*/
+/*  display  : block;*/
+/*  width    : 41%;*/
+/*  height   : auto;*/
+/*  position : absolute;*/
+/*  right: 1%;*/
+/*  bottom: 35%;*/
+/*}*/
+#dnaIconI {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  left: 30%;
+  bottom: 15%;
+}
+#accessIconI {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  left: 8%;
+  bottom: 4%;
+}
+#engineIconI {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  left: 30%;
+  bottom: 4%;
+}
+#displayIconI {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  right: 30%;
+  bottom: 4%;
+}
+#headlampIconI {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  right: 8%;
+  bottom: 4%;
+}
+
+#brakeIconI {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  right: 8%;
+  bottom: 15%;
+}
+
+#wheelIconI {
+  display  : block;
+  width    : 18%;
+  height   : auto;
+  position : absolute;
+  right: 30%;
+  bottom: 15%;
+}
+
+/*#bike2 {*/
+/*  display  : block;*/
+/*  width    : 30%;*/
+/*  height   : auto;*/
+/*  position : absolute;*/
+/*  right: 35%;*/
+/*  bottom: 50%;*/
+/*}*/
+
+/*#bike3 {*/
+/*  display  : block;*/
+/*  width    : 30%;*/
+/*  height   : auto;*/
+/*  position : absolute;*/
+/*  right: 6%;*/
+/*  bottom: 50%;*/
+/*}*/
+
+/*#bike1 {*/
+/*  display  : block;*/
+/*  width    : 30%;*/
+/*  height   : auto;*/
+/*  position : absolute;*/
+/*  left: 6%;*/
+/*  bottom: 50%;*/
+/*}*/
